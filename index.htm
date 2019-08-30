@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Game Space Rumer Javascript</title>
+	<style>
+	    #canvas {
+	    	border: 1px solid #000000;
+	    	width: 960px;
+	    }
+	 </style>
+</head>
+<body>
+	<canvas id="canvas">Your Browser not support.</canvas>
+
+	<script>
+		window.onload= init();
+
+		function init(){
+			canvas = document.getElementById('canvas');
+			cw     = canvas.width = 920;
+			ch     = canvas.height = 520;
+			pen    = canvas.getContext('2d');
+			
+			pen.beginPath();
+			pen.fillStyle = 'red';
+			pen.rect(10, 10, 100, 100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'orange';
+			pen.rect(210, 110, 100, 100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'yellow';
+			pen.rect(810, 10, 100, 100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'green';
+			pen.rect(610, 110, 100, 100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'blue';
+			pen.rect(10, 410, 100, 100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'purple';
+			pen.rect(210, 300, 100, 100);
+			pen.fill();
+
+
+			pen.beginPath();
+			pen.fillStyle = 'blue';
+			pen.rect(810, 410, 100, 100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'purple';
+			pen.rect(410, 200, 100, 100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'pink';
+			pen.rect(610, 300, 100, 100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'green';
+			pen.rect(cw/2 - 50, ch/2 - 250 , 100, 100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'blue';
+			pen.rect(cw/2 - 50, ch/2 - -150, 100, 100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'pink';
+			pen.rect(810, 200, 100, 100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'red';
+			pen.rect(10, 200, 100, 100);
+			pen.fill();
+
+
+
+		}
+    </script>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+
